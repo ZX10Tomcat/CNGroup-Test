@@ -1,0 +1,31 @@
+﻿<Window x:Class="cngroup_wpf.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CNGroup"
+        mc:Ignorable="d"
+        Title="Help" Height="409.581" Width="805.39" ResizeMode="NoResize">
+    <Grid Height="252" VerticalAlignment="Top" Width="591" MinWidth="591" MinHeight="252">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="574*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtBlockHelp" HorizontalAlignment="Center" Margin="-49,10,-92,-95" TextWrapping="Wrap" VerticalAlignment="Top" Height="337" Width="732" FontSize="16" Grid.ColumnSpan="2">
+            Problem: Calculator   <LineBreak />
+            Write some code to calculate a result from a set of instructions.  Instructions comprise of  <LineBreak />
+            a keyword and a number that are separated by a space per line.  Instructions are loaded  <LineBreak />
+            from file and results are output to the screen. Any number of Instructions can be specified.  <LineBreak />
+            Instructions can be any binary operators of your choice (e.g., add, divide, subtract, multiply etc).   <LineBreak />
+            The instructions will ignore mathematical precedence. The last instruction should be “apply” and  <LineBreak />
+            a number (e.g., “apply 3”). The calculator is then initialised with that number and the previous  <LineBreak />
+            instructions are applied to that number. <LineBreak />
+             <LineBreak />
+            Usage:  <LineBreak />
+            1. Click "Open File" to open the file with set of instructions (one is in Folder "TestExample"  <LineBreak />
+            in the solution). You will see the content of the file in the "File Content" TextBox <LineBreak />
+            2. Click "Calculate" to see the result in the Output TextBox.
+        </TextBlock>
+
+    </Grid>
+</Window>

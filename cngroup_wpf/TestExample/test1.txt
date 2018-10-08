@@ -1,0 +1,11 @@
+add 2
+multiply 3
+apply 3
+
+multiply 9
+apply 5
+
+apply 1
+
+divide 1.57987
+apply 3
